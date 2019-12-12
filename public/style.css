@@ -1,8 +1,9 @@
 
 #navbarLogo{
   margin-left: 50px;
-    width: 10%;
+    width: 100%;
     height:10%;
+    float: left;
 }
 
 #subscribe{
@@ -19,4 +20,19 @@ body{
 
 #space{
     height: 50px;
+}
+.navbar-brand{
+    width: 10%
+}
+.VendorRegister{
+    width:25%;
+    
+}
+.nav-link{
+    width: 25%
+}
+
+#vendorRegisterSubmit{
+    color:white;
+    background-color:  #ff752e
 }
