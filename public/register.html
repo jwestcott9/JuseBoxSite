@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+        <script src="api.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="./style.css">
+      <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>JuseBox</title>
+  </head>
+
+  <!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+        
+    <a class="navbar-brand" href="/"><img id="navbarLogo" src = "assets/images/juseBoxLogo.png"></a>
+        <ul class="navbar-nav">
+           
+          <li class="VendorRegister">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- As a heading -->
+    
+  <!-- Default form subscription -->
+<div class="row" id="space"></div>
+  <div class="row">
+      <div class="col-md-1"></div>
+      
+      <form class = "col-md-10">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                    <label for="exampleFormControlSelect1">Business Name</label>
+                    <input type="businessName" class="form-control" id="businessName" placeholder="juseBox headquarters">
+                  </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Address</label>
+              <input type="address" class="form-control" id="address" onFocus="geolocate()" placeholder="123 north fake st">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">How many 5 port units do you think would be appropriate</label>
+              <select multiple class="form-control" id="numberOfUnits">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="description">Briefly explain why your business would be a good place for a jusebox powerbank</label>
+              <textarea class="form-control" id="description" rows="3"></textarea>
+            </div>
+
+            <button type= "submit" class="btn"  onClick = "check()" id = "vendorRegisterSubmit">
+                submit
+            </button>
+
+          </form>
+    
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/path/to/bootstrap/js/bootstrap.min.js"></script>
+<script src="geolocate.js"></script>
+<script src = "register.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<!-- firebase link -->
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIz8qrO8twXzKFjfAvT1ND-dczatqG54E&libraries=places&callback=initAutocomplete">
+</script>
+    <!-- Default form subscription -->
+  </body>
+</html>
