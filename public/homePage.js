@@ -5,7 +5,7 @@ let intViewPort =window.innerWidth;
 
 
 if(intViewPort <= 769){
-    $("#")
+  console.log("something")
 }
 $("#UserBtn").on("click", function(){
    

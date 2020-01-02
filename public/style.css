@@ -22,7 +22,9 @@ body{
 #form-signup{
     background-color: white;
 }
-
+.iphoneQuery{
+    display: none;
+}
 #space{
     height: 50px;
 }
@@ -157,44 +159,26 @@ img {
     height: 40%;
 }
 #scanBlurb{
-    float: initial;
+    float: right;
+    font-size: 18pt;
+    
 }
+#scanBox{
+    float: right;
+}
+
+.scanRowfix{
+    height: 20%;
+}
+
 
 @media screen and (max-width: 769px){
-
+ .largeScreen{
+     display: none
+ }
+ .iphoneQuery{
+     display: initial;
+ }
 }
 
-
-
-#elevatorPitch{
-    margin-top: 20px;
-}
-
-.logoMediaQuery{
-    margin-top: 0px;
-    margin-left: 10%;
-    width: 40%
-}
-.spaceQuery{
-    width: 10%
-}
-.subTitleQuery{
-    padding: 5px;
-    width:20%
-}
-
-.hide{
-    display: none;
-}
-.downloadLinkQuery{
-    margin-top: 0px;
-    width: 20%;
-}
-
-.downloadLinkRowQuery {
-    margin: 0px;
-}
-.downloadRowSpace{
-    width: 5%;
-}
 
