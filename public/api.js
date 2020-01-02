@@ -1,8 +1,6 @@
 
 let database;
-$(document).ready(function(){
-   
-})
+
 
 // warning for this kind of call if there are ever two of the same addresses inputed it will throw an error and likely crash the server
 // to fix this issue one will have to make a call on the front end to see if the address already exists in the database... if so 
@@ -30,47 +28,3 @@ database = firebase.database();
    
 }
 // Authentication will become more and more neccesary for this company website. 
-
-
-
-function checkdatabase(email, name){
-
-    console.log('I was hit');
-    $.get("/checkdatabase/"+email, function(data, status){
-        console.log(data, status);
-
-        if(data === true){
-            alert("this email existst already")
-            return true 
-            
-        }else{
-            alert("Thank you " +name +"!")
-            posttodatabase(email, name)
-            $('#defaultSubscriptionFormName').val('');
-            $('#defaultSubscriptionFormEmail').val('');
-           
-            
-           
-        }
-    })
-}
-
-function posttodatabase(email, name){
-    console.log('posting to database');
-    let newuser = {
-        email: email, 
-        name: name}
-  
-    $.post("/postUser", {
-        name: name,
-        email: email
-    }, function(data, status){
-        reload();
-        console.log( data, status);
-      
-    }).then(function(){
-    
-    })
-}
-
-function 
