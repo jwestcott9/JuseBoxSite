@@ -54,6 +54,7 @@ img {
 
 #titleScreenLogo{
     margin-top: 40px;
+    height: 100%;
 }
 #titleScreenTopSpace{
     height: 38px;
@@ -222,11 +223,13 @@ margin-left:30%
     
 }
 .FAQ{
-    margin-right: -400px;
+    margin-right: -500px;
 }
 #navbarLogo{
+    margin-left:
     height:35px;
     width:100px;
+    
 }
 }
 
