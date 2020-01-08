@@ -89,12 +89,12 @@ img {
 }
 .buttonRow{
     margin-top: 5%;
-    height: 277px;
+    height: 100%;
 }
 
 .customerButton{
     border-color: grey;
-    width: 35%;
+    width: 70%;
     height: 58px;
     border-radius: 10px;
     margin: 20px;
@@ -184,6 +184,7 @@ img {
     display: flex;
 }
 
+
 @media screen and (max-width: 769px){
  .largeScreen{
      display: none
@@ -226,11 +227,18 @@ margin-left:30%
     margin-right: -500px;
 }
 #navbarLogo{
-    margin-left:
+   
     height:35px;
     width:100px;
     
 }
+}
+
+
+
+#form-signup{
+    width: 60%;
+    padding: 0;
 }
 
 

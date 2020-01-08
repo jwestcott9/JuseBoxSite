@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
 
 
-    <title>Jusebox</title>
+    <title>jusebox</title>
   </head>
   <body>
 
@@ -76,10 +76,28 @@
             <div  id="elevatorPitch">
               Got Battery Anxiety?
               <br/>
-              JuseBox provides portable charging banks for you and your customers.
+              jusebox provides portable charging banks for you and your customers.
               <br/> 
               Rent and return anywhere. Download the App!
           </div>
+          <form class="text-center border border-light p-5 col-md-3" id="form-signup" action="#!">
+
+            <p class="h4 mb-4">Sign Up!</p>
+        
+            <p>Join our mailing list for a free month of care free charging.</p>
+        
+         
+            <!-- Name -->
+            <input type="name" id="defaultSubscriptionFormName" class="form-control mb-4" placeholder="Name">
+        
+            <!-- Email -->
+            <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+        
+            <!-- Sign in button -->
+            <button class="btn btn-info btn-block" type="submit" id="subscribe">Subscribe</button>
+        
+        
+        </form>
 
           <a href="/userPage">
             <button class="btn customerButton" id="UserBtn">
@@ -142,28 +160,59 @@
               <div class="col-md-10" id="elevatorPitch">
                   Got Battery Anxiety?
                   <br/>
-                  JuseBox provides portable charging banks for you and your customers.
+                  jusebox provides portable charging banks for you and your customers.
                   <br/> 
                   Rent and return anywhere. Download the App!
               </div>
              
           </div>
           <div class="row buttonRow">
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
-                <a href="/userPage">
-            <button class="btn customerButton" id="UserBtn">
-                User
-            </button>
-          </a>
-          <a href="/vendorRegister">
-            <button class="btn customerButton" id="businessBtn">
-                Business
-            </button>
-          </a>
-            </div>
-          </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-10">
+                <form class=" border border-light p-5 " id="form-signup" >
 
+                  <p class="h4 mb-4">Sign Up!</p>
+              
+                  <p>Join our mailing list for a free month of care free charging.</p>
+              
+               
+                  <!-- Name -->
+                  <input type="name" id="defaultSubscriptionFormName" class="form-control mb-4" placeholder="Name">
+              
+                  <!-- Email -->
+                  <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+              
+                  <!-- Sign in button -->
+                  <button class="btn btn-info btn-block" type="submit" id="subscribe">Subscribe</button>
+              
+              
+              </form>
+             
+                
+          
+            </div>
+         
+          </div>
+          <div class="row">
+            <div class="col-md-2"></div>
+          <div class="col-md-6">
+            <form class=" border border-light p-5 " id="businessSignup" action="/vendorRegister">
+
+              <p class="h4 mb-4">Interested in having a jusebox in your place of business?</p>
+          
+              
+     
+              <!-- Sign in button -->
+              <a href="/vendorRegister">
+                <button class="btn customerButton" id="businessBtn">
+                    Click Here
+                </button>
+              </a>
+          
+          </form>
+        </div>
+
+      </div>
           <!-- Locate Section  -->
         <div class=" locateSection row">
           <div id="locateSectionBuffer"></div>
@@ -173,7 +222,7 @@
             <img id="locate" src="./assets/images/Locate.png">
             <img id="locateSymbol" src = "./assets/images/GPS-PNG-Clipart.png">
             <br/>
-            <span id="locateBlurb">Use the Jusebox app to find the closest charger to you</span>
+            <span id="locateBlurb">Use the jusebox app to find the closest charger to you</span>
           </div>
 
           <div class="col-md-3">
@@ -215,8 +264,8 @@
 
     <div class="row">
       <div class="col-md-2"></div>
-      <video class="col-md-8" id="video" controls>
-        <source src="./assets/juicebox.mp4" type="video/mp4">
+      <video class="col-md-8" id="video" controls preload="metadata">
+        <source src="./assets/juicebox.mp4#t=5" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video>
