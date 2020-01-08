@@ -34,7 +34,7 @@ function posttodatabase(email, name){
         name: name,
         email: email
     }, function(data, status){
-        reload();
+        // reload();
         console.log( data, status);
       
     }).then(function(){

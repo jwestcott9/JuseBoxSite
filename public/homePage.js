@@ -1,15 +1,22 @@
 
 
-let intViewPort =window.innerWidth;
+    $('#subscribe').on("click", function(){
+        event.preventDefault();
+        var name = $('#defaultSubscriptionFormName').val()
+        var email = $('#defaultSubscriptionFormEmail').val();    
+        postUserToDatabase(email, name);
+        
+     })
 
 
-
-if(intViewPort <= 769){
-  console.log("something")
-}
-$("#UserBtn").on("click", function(){
+function postUserToDatabase(email, name){
    
-    console.log("wtf I cant remeber how to code")
+    console.log(email, name)
+    let newUser = 
+    {
+        email: email,
+        name: name
+    }
 
-    console.log(intViewPort)
-})
+    addNewUser(newUser);
+}
