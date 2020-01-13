@@ -29,6 +29,25 @@ database = firebase.database();
    
 }
 
+function checkUsers (email){
+    let firebaseConfig = {
+        apiKey: "AIzaSyDaQOoyguuNsFWelJ_Y6MXTpm_vk7Mn6Wg",
+        authDomain: "jusebox-ad0be.firebaseapp.com",
+        databaseURL: "https://jusebox-ad0be.firebaseio.com",
+        projectId: "jusebox-ad0be",
+        storageBucket: "jusebox-ad0be.appspot.com",
+        messagingSenderId: "171439509082",
+        appId: "1:171439509082:web:a7cd50665b50b2b38d5263",
+        measurementId: "G-LS8YGM7CLS"
+      };
+      firebase.initializeApp(firebaseConfig); 
+      database = firebase.database()
+      database.ref('/users').once('value').then(function(snapshot){
+          console.log(snapshot);
+      })
+
+}
+
 function addNewUser (userInfo){
     let firebaseConfig = {
         apiKey: "AIzaSyDaQOoyguuNsFWelJ_Y6MXTpm_vk7Mn6Wg",

@@ -5,7 +5,7 @@
         var name = $('#defaultSubscriptionFormName').val()
         var email = $('#defaultSubscriptionFormEmail').val();    
         postUserToDatabase(email, name);
-        
+       
      })
 
 
@@ -17,6 +17,7 @@ function postUserToDatabase(email, name){
         email: email,
         name: name
     }
-
+    // checkUsers();
     addNewUser(newUser);
 }
+
